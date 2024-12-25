@@ -6,7 +6,94 @@ import 'package:flutter_essentials/features/ui_widgets/custom_button.dart';
 import 'package:flutter_essentials/features/ui_widgets/text_field_widget.dart';
 
 class UIWidgetsScreen extends StatelessWidget {
-  const UIWidgetsScreen({Key? key}) : super(key: key);
+  const UIWidgetsScreen({super.key});
+
+  // Extract widget sections to improve readability and maintainability
+  List<Widget> _buildWidgetSections(BuildContext context) {
+    return [
+      _buildButtonSection(context),
+      const SizedBox(height: 20),
+      _buildCardSection(context),
+      const SizedBox(height: 20),
+      _buildTextFieldSection(context),
+      const SizedBox(height: 20),
+      _buildSwitchSection(context),
+    ];
+  }
+
+  Widget _buildButtonSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Custom Button',
+      widget: CustomButton(
+        label: 'Click Me',
+        onPressed: () => _showSnackBar(context, 'Button Pressed'),
+      ),
+      description: 'A customizable button widget that triggers an action when clicked.',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_button.dart',
+
+    );
+  }
+
+  Widget _buildCardSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Custom Card',
+      widget: CustomCard(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: const [
+            Text(
+              'This is a custom card.',
+              style: TextStyle(fontSize: 16),
+            ),
+            SizedBox(height: 5),
+            Text(
+              'Add any content you want here.',
+              style: TextStyle(fontSize: 14),
+            ),
+          ],
+        ),
+      ),
+      description: 'A customizable card widget with padding and elevation.',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_button.dart',
+    );
+  }
+
+  Widget _buildTextFieldSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Custom Text Field',
+      widget: CustomTextField(
+        label: 'Enter Text',
+        hintText: 'Type something...',
+        onChanged: (value) => _handleTextChange(context, value),
+      ),
+      description: 'A text input field with customizable label and hint.',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_button.dart',
+    );
+  }
+
+  Widget _buildSwitchSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Switch Button',
+      widget: const CustomSwitch(),
+      description: 'A toggle switch button',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_button.dart',
+    );
+  }
+
+  // Helper methods
+  void _showSnackBar(BuildContext context, String message) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text(message)),
+    );
+  }
+
+  void _handleTextChange(BuildContext context, String value) {
+    // Add text field change handling logic here
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,122 +105,7 @@ class UIWidgetsScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
-          children: [
-            ExpandableSection.buildExpandableSection(
-              context,
-              title: 'Custom Button',
-              widget: CustomButton(
-                label: 'Click Me',
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Button Pressed')),
-                  );
-                },
-              ),
-              description:
-                  'A customizable button widget that triggers an action when clicked.',
-              sourceCode: '''CustomButton(
-  label: 'Click Me',
-  onPressed: () {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Button Pressed')),
-    );
-  },
-)''',
-            ),
-            const SizedBox(height: 20),
-            ExpandableSection.buildExpandableSection(
-              context,
-              title: 'Custom Card',
-              widget: CustomCard(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text('This is a custom card.',
-                        style: TextStyle(fontSize: 16)),
-                    SizedBox(height: 5),
-                    Text('Add any content you want here.',
-                        style: TextStyle(fontSize: 14)),
-                  ],
-                ),
-              ),
-              description:
-                  'A customizable card widget with padding and elevation.',
-              sourceCode: '''CustomCard(
-  child: Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: const [
-      Text(
-        'This is a custom card.',
-        style: TextStyle(fontSize: 16),
-      ),
-      SizedBox(height: 5),
-      Text(
-        'Add any content you want here.',
-        style: TextStyle(fontSize: 14),
-      ),
-    ],
-  ),
-)''',
-            ),
-            const SizedBox(height: 20),
-            ExpandableSection.buildExpandableSection(
-              context,
-              title: 'Custom Text Field',
-              widget: CustomTextField(
-                label: 'Enter Text',
-                hintText: 'Type something...',
-              ),
-              description:
-                  'A text input field with customizable label and hint.',
-              sourceCode: '''CustomTextField(
-  label: 'Enter Text',
-  hintText: 'Type something...',
-)''',
-            ),
-            const SizedBox(height: 20),
-            ExpandableSection.buildExpandableSection(
-              context,
-              title: 'Switch Button',
-              widget: CustomSwitch(),
-              description:
-              'A toggle switch button',
-              sourceCode: '''import 'package:flutter/material.dart';
-
-class CustomSwitch extends StatefulWidget {
-  const CustomSwitch({Key? key}) : super(key: key);
-
-  @override
-  _CustomSwitchState createState() => _CustomSwitchState();
-}
-
-class _CustomSwitchState extends State<CustomSwitch> {
-  bool _isOn = false;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          'Toggle Switch',
-          style: Theme.of(context).textTheme.bodyMedium,
-        ),
-        Switch(
-          value: _isOn,
-          onChanged: (value) {
-            setState(() {
-              _isOn = value;
-            });
-          },
-        ),
-      ],
-    );
-  }
-}
-''',
-            ),
-          ],
+          children: _buildWidgetSections(context),
         ),
       ),
     );

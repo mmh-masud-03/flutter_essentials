@@ -1,13 +1,15 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_essentials/widgets/source_code_dialog.dart';
 
-class ExpandableSection{
+// expandable_section.dart (updated)
+import 'package:flutter/material.dart';
+import 'package:flutter_essentials/widgets/code_viewer.dart';
+
+class ExpandableSection {
   static Widget buildExpandableSection(
       BuildContext context, {
         required String title,
         required Widget widget,
         required String description,
-        required String sourceCode,
+        required String codeUrl,
       }) {
     return ExpansionTile(
       title: Text(
@@ -25,16 +27,73 @@ class ExpandableSection{
               widget,
               const SizedBox(height: 10),
               ElevatedButton(
-                onPressed: () {
-                  SourceCodeDialog.showSourceCodeDialog(context, sourceCode);
-                  //_showSourceCodeDialog(context, sourceCode);
-                },
+                onPressed: () => _showCodeDialog(context, codeUrl, title),
                 child: const Text('View Source Code'),
               ),
             ],
           ),
         ),
       ],
+    );
+  }
+
+  static void _showCodeDialog(
+      BuildContext context,
+      String codeUrl,
+      String title,
+      ) {
+    final screenSize = MediaQuery.of(context).size;
+
+    showDialog(
+      context: context,
+      builder: (context) => Dialog(
+        insetPadding: const EdgeInsets.all(16),
+        child: Container(
+          width: screenSize.width * 0.92,
+          height: screenSize.height * 0.85,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(8),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              _buildDialogHeader(context, title),
+              Expanded(
+                child: CodeViewer(codeUrl: codeUrl),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  static Widget _buildDialogHeader(BuildContext context, String title) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Theme.of(context).primaryColor,
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(8),
+          topRight: Radius.circular(8),
+        ),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            'Source Code - $title',
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+              color: Colors.white,
+            ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.close, color: Colors.white),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+        ],
+      ),
     );
   }
 }

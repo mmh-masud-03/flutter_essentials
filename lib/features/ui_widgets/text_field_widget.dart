@@ -17,7 +17,7 @@ class CustomTextField extends StatelessWidget {
     this.keyboardType,
     this.obscureText = false,
     this.prefixIcon,
-    this.suffixIcon,
+    this.suffixIcon, required void Function(dynamic value) onChanged,
   }) : super(key: key);
 
   @override
