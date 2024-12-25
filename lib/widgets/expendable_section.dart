@@ -82,10 +82,15 @@ class ExpandableSection {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
-            'Source Code - $title',
-            style: Theme.of(context).textTheme.titleLarge?.copyWith(
-              color: Colors.white,
+          Expanded(  // Added Expanded widget
+            child: Text(
+              'Source Code - $title',
+              maxLines: 2,
+              textAlign: TextAlign.center,
+              overflow: TextOverflow.ellipsis,  // Changed to ellipsis
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                color: Colors.white,
+              ),
             ),
           ),
           IconButton(
