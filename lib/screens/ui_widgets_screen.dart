@@ -7,7 +7,6 @@ import 'package:flutter_essentials/features/ui_widgets/text_field_widget.dart';
 
 class UIWidgetsScreen extends StatelessWidget {
   const UIWidgetsScreen({super.key});
-
   // Extract widget sections to improve readability and maintainability
   List<Widget> _buildWidgetSections(BuildContext context) {
     return [
@@ -56,7 +55,7 @@ class UIWidgetsScreen extends StatelessWidget {
         ),
       ),
       description: 'A customizable card widget with padding and elevation.',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_button.dart',
+    codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/card_widget.dart"
     );
   }
 
@@ -70,7 +69,7 @@ class UIWidgetsScreen extends StatelessWidget {
         onChanged: (value) => _handleTextChange(context, value),
       ),
       description: 'A text input field with customizable label and hint.',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_button.dart',
+codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/text_field_widget.dart"
     );
   }
 
@@ -80,7 +79,7 @@ class UIWidgetsScreen extends StatelessWidget {
       title: 'Switch Button',
       widget: const CustomSwitch(),
       description: 'A toggle switch button',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_button.dart',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/switch_widget.dart"
     );
   }
 
