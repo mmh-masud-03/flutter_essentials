@@ -46,6 +46,8 @@ class UIWidgetsScreen extends StatelessWidget {
       const SizedBox(height: 20),
       _buildRadioButtonGroupSection(context),
       const SizedBox(height: 20),
+      _buildStepperSection(context),
+      const SizedBox(height: 20),
       _buildSwitchSection(context)
     ];
   }
@@ -58,8 +60,10 @@ class UIWidgetsScreen extends StatelessWidget {
         label: 'Click Me',
         onPressed: () => _showSnackBar(context, 'Button Pressed'),
       ),
-      description: 'A customizable button widget that triggers an action when clicked.',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_button.dart',
+      description:
+          'A customizable button widget that triggers an action when clicked.',
+      codeUrl:
+          'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_button.dart',
     );
   }
 
@@ -84,7 +88,8 @@ class UIWidgetsScreen extends StatelessWidget {
         ),
       ),
       description: 'A customizable card widget with padding and elevation.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/card_widget.dart",
+      codeUrl:
+          "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/card_widget.dart",
     );
   }
 
@@ -98,7 +103,8 @@ class UIWidgetsScreen extends StatelessWidget {
         onChanged: (value) => _handleTextChange(context, value),
       ),
       description: 'A text input field with customizable label and hint.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/text_field_widget.dart",
+      codeUrl:
+          "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/text_field_widget.dart",
     );
   }
 
@@ -108,63 +114,75 @@ class UIWidgetsScreen extends StatelessWidget {
       title: 'Switch Button',
       widget: const CustomSwitch(),
       description: 'A toggle switch button.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/switch_widget.dart",
+      codeUrl:
+          "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/switch_widget.dart",
     );
   }
+
   Widget _buildBadgeSection(BuildContext context) {
     return ExpandableSection.buildExpandableSection(
       context,
       title: 'Custom Badge',
       widget: CustomBadge(text: "Custom Badge"),
       description: 'A custom badge.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_dropdown.dart",
+      codeUrl:"https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/badge.dart"
     );
   }
+
   Widget _buildChipSection(BuildContext context) {
-    return ExpandableSection.buildExpandableSection(
-      context,
-      title: 'Custom Chip',
-      widget: CustomChip(label: "Custom Chip"),
-      description: 'A Custom Chip.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_dropdown.dart",
-    );
+    return ExpandableSection.buildExpandableSection(context,
+        title: 'Custom Chip',
+        widget: CustomChip(label: "Custom Chip"),
+        description: 'A Custom Chip.',
+        codeUrl:
+            "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_chip.dart");
   }
+
   Widget _buildSliderSection(BuildContext context) {
     return ExpandableSection.buildExpandableSection(
       context,
       title: 'Custom Slider',
-      widget: CustomSlider(min: 10, max: 100, initialValue: 20, onChanged: (value){}),
+      widget: CustomSlider(
+          min: 10, max: 100, initialValue: 20, onChanged: (value) {}),
       description: 'A Custom Slider.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_dropdown.dart",
+      codeUrl:"https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_slider.dart"
     );
   }
+
   Widget _buildProgressIndicatorSection(BuildContext context) {
     return ExpandableSection.buildExpandableSection(
       context,
       title: 'Custom Progress Indicator',
-      widget: CustomProgressIndicator(progress:0.2 ),
+      widget: CustomProgressIndicator(progress: 0.2),
       description: 'A Custom Progress Indicator.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_dropdown.dart",
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/progress_indicator.dart"
     );
   }
+
   Widget _buildRadioButtonGroupSection(BuildContext context) {
     return ExpandableSection.buildExpandableSection(
       context,
       title: 'Custom Radio Button Group',
-      widget: CustomRadioGroup(groupLabel: "Radio Group", options: ['Option 1','Option 2', 'Option 3'], onChanged: (value){}),
+      widget: CustomRadioGroup(
+          groupLabel: "Radio Group",
+          options: ['Option 1', 'Option 2', 'Option 3'],
+          onChanged: (value) {}),
       description: 'A Custom Radio Button Group.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_dropdown.dart",
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/radio_button_group.dart"
     );
   }
+
   Widget _buildStepperSection(BuildContext context) {
     return ExpandableSection.buildExpandableSection(
       context,
-      title: 'Custom Radio Button Group',
-      widget: CustomStepper(currentStep: 5, steps: ['1','5','10'], onStepTapped: (v){}),
-      description: 'A Custom Radio Button Group.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_dropdown.dart",
+      title: 'Custom Stepper',
+      widget: CustomStepper(
+          currentStep: 2, steps: ['0', '4', '8'], onStepTapped: (v) {}),
+      description: 'A Custom Stepper.',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/stepper.dart"
     );
   }
+
   Widget _buildDropdownSection(BuildContext context) {
     return ExpandableSection.buildExpandableSection(
       context,
@@ -178,7 +196,7 @@ class UIWidgetsScreen extends StatelessWidget {
         },
       ),
       description: 'A dropdown menu to select an option.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_dropdown.dart",
+      codeUrl:"https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/dropdown.dart"
     );
   }
 
@@ -193,7 +211,7 @@ class UIWidgetsScreen extends StatelessWidget {
         },
       ),
       description: 'A date picker widget for selecting dates.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_date_picker.dart",
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/date_picker.dart"
     );
   }
 
@@ -209,7 +227,7 @@ class UIWidgetsScreen extends StatelessWidget {
         },
       ),
       description: 'A rating bar with customizable stars.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_rating_bar.dart",
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/rating_bar.dart"
     );
   }
 
@@ -222,7 +240,7 @@ class UIWidgetsScreen extends StatelessWidget {
         radius: 40,
       ),
       description: 'A circular avatar with an image.',
-      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/custom_avatar.dart",
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/circle_avatar.dart"
     );
   }
 
