@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_essentials/screens/animations_screen.dart';
+import 'package:flutter_essentials/screens/boilerplates_screen.dart';
 import 'package:flutter_essentials/screens/home_screen.dart';
 import 'package:flutter_essentials/screens/ui_widgets_screen.dart';
 import 'core/theme/app_theme.dart';
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
       darkTheme: AppTheme.darkTheme,
       routes: {
         "/ui-widgets":(context)=>UIWidgetsScreen(),
-        "animations-screen":(context)=>UIAnimationsScreen()
+        "/animations-screen":(context)=>UIAnimationsScreen(),
+        "/boilerplate":(context)=>BoilerplatesScreen()
       },
       home: const HomeScreen(),
     );

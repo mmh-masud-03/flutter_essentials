@@ -30,14 +30,14 @@ class HomeScreen extends StatelessWidget {
               icon: Icons.animation,
               title: 'Animations',
               onTap: () {
-                Navigator.of(context).pushNamed('animations-screen');
+                Navigator.of(context).pushNamed('/animations-screen');
               },
             ),
             _FeatureCard(
               icon: Icons.code,
               title: 'Boilerplates',
               onTap: () {
-                // Navigate to Boilerplates Section
+                Navigator.of(context).pushNamed("/boilerplate");
               },
             ),
             _FeatureCard(
