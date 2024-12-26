@@ -30,7 +30,7 @@ class HomeScreen extends StatelessWidget {
               icon: Icons.animation,
               title: 'Animations',
               onTap: () {
-                // Navigate to Animations Section
+                Navigator.of(context).pushNamed('animations-screen');
               },
             ),
             _FeatureCard(
