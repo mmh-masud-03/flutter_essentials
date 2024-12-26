@@ -24,8 +24,7 @@ class BoilerplatesScreen extends StatelessWidget {
       ),
       description:
       'Learn how to manage simple states using Riverpod’s StateProvider.',
-      codeUrl:
-      'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/state_provider_example.dart',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/counter_riverpod.dart"
     );
   }
 
@@ -39,8 +38,7 @@ class BoilerplatesScreen extends StatelessWidget {
       ),
       description:
       'Fetch data from an API or perform long-running tasks using FutureProvider.',
-      codeUrl:
-      'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/future_provider_example.dart',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/future_provider.dart"
     );
   }
 
@@ -54,10 +52,11 @@ class BoilerplatesScreen extends StatelessWidget {
       ),
       description:
       'A comprehensive example of Riverpod’s NotifierProvider for advanced state management.',
-      codeUrl:
-      'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/notifier_provider_example.dart',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/notifier_provider.dart"
     );
   }
+
+
 
   @override
   Widget build(BuildContext context) {
