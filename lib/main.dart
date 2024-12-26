@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       darkTheme: AppTheme.darkTheme,
       routes: {
         "/ui-widgets":(context)=>UIWidgetsScreen(),
-        "animations-screen":(context)=>AnimationsScreen()
+        "animations-screen":(context)=>UIAnimationsScreen()
       },
       home: const HomeScreen(),
     );
