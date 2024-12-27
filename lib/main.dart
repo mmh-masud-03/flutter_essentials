@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_essentials/screens/animations_screen.dart';
+import 'package:flutter_essentials/screens/api_integration_screen.dart';
 import 'package:flutter_essentials/screens/boilerplates_screen.dart';
 import 'package:flutter_essentials/screens/home_screen.dart';
 import 'package:flutter_essentials/screens/ui_widgets_screen.dart';
@@ -22,7 +23,8 @@ class MyApp extends StatelessWidget {
       routes: {
         "/ui-widgets":(context)=>UIWidgetsScreen(),
         "/animations-screen":(context)=>UIAnimationsScreen(),
-        "/boilerplate":(context)=>BoilerplatesScreen()
+        "/boilerplate":(context)=>BoilerplatesScreen(),
+        "/api-integration":(context)=>ApiMethodsScreen()
       },
       home: const HomeScreen(),
     );

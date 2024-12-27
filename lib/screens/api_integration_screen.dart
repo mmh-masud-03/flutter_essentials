@@ -27,8 +27,7 @@ class ApiMethodsScreen extends StatelessWidget {
         style: TextStyle(fontSize: 16),
       ),
       description: 'Retrieve data from the server using the GET method.',
-      codeUrl:
-      'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_methods/get_method_example.dart',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_integration/get_method_example.dart'
     );
   }
 
@@ -41,8 +40,7 @@ class ApiMethodsScreen extends StatelessWidget {
         style: TextStyle(fontSize: 16),
       ),
       description: 'Create new data on the server using the POST method.',
-      codeUrl:
-      'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_methods/post_method_example.dart',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_integration/post_method_example.dart'
     );
   }
 
@@ -56,8 +54,7 @@ class ApiMethodsScreen extends StatelessWidget {
       ),
       description:
       'Replace the entire data resource on the server using the PUT method.',
-      codeUrl:
-      'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_methods/put_method_example.dart',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_integration/put_method_example.dart'
     );
   }
 
@@ -70,8 +67,7 @@ class ApiMethodsScreen extends StatelessWidget {
         style: TextStyle(fontSize: 16),
       ),
       description: 'Modify specific fields in a data resource using PATCH.',
-      codeUrl:
-      'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_methods/patch_method_example.dart',
+      codeUrl:'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_integration/patch_method_example.dart'
     );
   }
 
@@ -84,8 +80,7 @@ class ApiMethodsScreen extends StatelessWidget {
         style: TextStyle(fontSize: 16),
       ),
       description: 'Remove data from the server using the DELETE method.',
-      codeUrl:
-      'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_methods/delete_method_example.dart',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/api_integration/delete_method_example.dart'
     );
   }
 

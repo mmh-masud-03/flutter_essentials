@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
               icon: Icons.integration_instructions,
               title: 'API Integration',
               onTap: () {
-                // Navigate to API Integration Section
+                Navigator.of(context).pushNamed('/api-integration');
               },
             ),
           ],
