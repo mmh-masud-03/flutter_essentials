@@ -6,6 +6,12 @@ class BoilerplatesScreen extends StatelessWidget {
 
   List<Widget> _buildBoilerplateSections(BuildContext context) {
     return [
+      _buildDrawerBoilerplate(context),
+      const SizedBox(height: 20),
+      _buildBottomNavBoilerplate(context),
+      const SizedBox(height: 20),
+      _buildLocalDatabaseBoilerplate(context),
+      const SizedBox(height: 20),
       _buildStateManagementBoilerplate(context),
       const SizedBox(height: 20),
       _buildAsyncStateManagementBoilerplate(context),
@@ -55,7 +61,46 @@ class BoilerplatesScreen extends StatelessWidget {
       codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/notifier_provider.dart"
     );
   }
+Widget _buildDrawerBoilerplate(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Drawer',
+      widget: const Text(
+        'A boilerplate to create a drawer in Flutter.',
+        style: TextStyle(fontSize: 16),
+      ),
+      description:
+      'Learn how to create a drawer in Flutter and navigate between screens.',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/drawer.dart"
+    );
+  }
 
+  Widget _buildBottomNavBoilerplate(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Bottom Navigation',
+      widget: const Text(
+        'A boilerplate to create a bottom navigation bar in Flutter.',
+        style: TextStyle(fontSize: 16),
+      ),
+      description:
+      'Learn how to create a bottom navigation bar in Flutter and navigate between screens.',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/bottom_nav.dart"
+    );
+  }
+  Widget _buildLocalDatabaseBoilerplate(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Local Database',
+      widget: const Text(
+        'A boilerplate to create a local database in Flutter.',
+        style: TextStyle(fontSize: 16),
+      ),
+      description:
+      'Learn how to create a local database in Flutter and perform CRUD operations.',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/boilerplates/local_db.txt"
+    );
+  }
 
 
   @override

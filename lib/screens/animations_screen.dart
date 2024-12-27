@@ -32,7 +32,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Fade Transition',
       widget: const FadeTransitionExample(),
       description: 'Animates the opacity of a widget.',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/blob/master/lib/features/animations/fade_transition_example.dart',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/fade_transition.dart'
     );
   }
 
@@ -42,7 +42,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Scale Transition',
       widget: const ScaleTransitionExample(),
       description: 'Animates the scaling of a widget.',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/blob/master/lib/features/animations/scale_transition_example.dart',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/scale_transition.dart'
     );
   }
 
@@ -52,7 +52,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Slide Transition',
       widget: const SlideTransitionExample(),
       description: 'Animates the position of a widget.',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/blob/master/lib/features/animations/slide_transition_example.dart',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/slide_transition.dart'
     );
   }
 
@@ -62,7 +62,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Rotation Transition',
       widget: const RotationTransitionExample(),
       description: 'Animates the rotation of a widget.',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/blob/master/lib/features/animations/rotation_transition_example.dart',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/rotation.dart'
     );
   }
 
@@ -72,7 +72,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Hero Animation',
       widget: const HeroAnimationExample(),
       description: 'Creates a smooth transition between two screens.',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/blob/master/lib/features/animations/hero_animation_example.dart',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/hero_animation.dart"
     );
   }
 
@@ -82,7 +82,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Animated Container',
       widget: const AnimatedContainerExample(),
       description: 'Animates changes in container properties like size, color, and more.',
-      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/blob/master/lib/features/animations/animated_container_example.dart',
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/animated_container.dart"
     );
   }
 
