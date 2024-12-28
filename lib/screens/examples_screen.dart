@@ -21,6 +21,8 @@ class ExamplesScreen extends StatelessWidget {
       _buildChartsSection(context),
       const SizedBox(height: 20),
       _buildDragAndDropSection(context),
+      const SizedBox(height: 20),
+      _buildBottomBarSection(context),
 
     ];
   }
@@ -169,6 +171,24 @@ Widget _buildFormeSection(BuildContext context) {
         child: const Text('Open Drag & Drop'),
       ),
       description: 'Explore drag-and-drop functionality in Flutter.',
+      codeUrl: '',
+    );
+  }
+  Widget _buildBottomBarSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Bottom Bar',
+      widget: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.white,
+          backgroundColor: Colors.blue,
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed('/bottom-bar');
+        },
+        child: const Text('Open Bottom Bar'),
+      ),
+      description: 'Create a bottom app bar with a floating action button.',
       codeUrl: '',
     );
   }
