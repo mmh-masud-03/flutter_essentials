@@ -47,6 +47,15 @@ class HomeScreen extends StatelessWidget {
                 Navigator.of(context).pushNamed('/api-integration');
               },
             ),
+            //examples of ui screens
+            _FeatureCard(
+              icon: Icons.more,
+              title: 'Examples',
+              onTap: () {
+                Navigator.of(context).pushNamed('/examples');
+              },
+            ),
+
           ],
         ),
       ),
