@@ -13,6 +13,14 @@ class ExamplesScreen extends StatelessWidget {
       _buildListSection(context),
       const SizedBox(height: 20),
       _buildCarouselSection(context),
+      const SizedBox(height: 20),
+      _buildTabsSection(context),
+      const SizedBox(height: 20),
+      _buildSliversSection(context),
+      const SizedBox(height: 20),
+      _buildChartsSection(context),
+      const SizedBox(height: 20),
+      _buildDragAndDropSection(context),
 
     ];
   }
@@ -92,6 +100,79 @@ Widget _buildFormeSection(BuildContext context) {
       codeUrl: ' '
     );
   }
+  Widget _buildTabsSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Tabs',
+      widget: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.white,
+          backgroundColor: Colors.blue,
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed('/tabs-screen');
+        },
+        child: const Text('Open Tabs'),
+      ),
+      description: 'Implement tab navigation with TabBar and TabBarView.',
+      codeUrl: '',
+    );
+  }
+  Widget _buildSliversSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Slivers',
+      widget: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.white,
+          backgroundColor: Colors.blue,
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed('/slivers-screen');
+        },
+        child: const Text('Open Slivers'),
+      ),
+      description: 'Learn about SliverAppBar, SliverList, and SliverGrid.',
+      codeUrl: '',
+    );
+  }
+  Widget _buildChartsSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Charts',
+      widget: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.white,
+          backgroundColor: Colors.blue,
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed('/charts-screen');
+        },
+        child: const Text('Open Charts'),
+      ),
+      description: 'Visualize data using bar, line, and pie charts.',
+      codeUrl: '',
+    );
+  }
+  Widget _buildDragAndDropSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Drag and Drop',
+      widget: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.white,
+          backgroundColor: Colors.blue,
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed('/drag-and-drop-screen');
+        },
+        child: const Text('Open Drag & Drop'),
+      ),
+      description: 'Explore drag-and-drop functionality in Flutter.',
+      codeUrl: '',
+    );
+  }
+
 
   @override
   Widget build(BuildContext context) {
