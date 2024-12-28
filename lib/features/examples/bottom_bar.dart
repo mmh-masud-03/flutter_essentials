@@ -111,8 +111,40 @@ class _BottomBarScreenState extends State<BottomBarScreen> with SingleTickerProv
           _navigationItems[_selectedIndex].label,
           style: const TextStyle(fontWeight: FontWeight.bold),
         ),
+        leading:
+        _selectedIndex == 0
+            ? Builder(
+              builder: (context) {
+                return IconButton(
+                    icon: const Icon(Icons.menu),
+                    onPressed: () {
+                      Scaffold.of(context).openDrawer();
+                    },
+                  );
+              }
+            )
+            : null,
         centerTitle: true,
         elevation: 0,
+      ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: const [
+            DrawerHeader(
+              decoration: BoxDecoration(color: Colors.blue),
+              child: Text('Menu', style: TextStyle(color: Colors.white, fontSize: 24)),
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Home'),
+            ),
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text('Settings'),
+            ),
+          ],
+        ),
       ),
       body: AnimatedSwitcher(
         duration: const Duration(milliseconds: 300),
