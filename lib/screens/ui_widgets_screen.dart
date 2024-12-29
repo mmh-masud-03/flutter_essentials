@@ -9,6 +9,7 @@ import 'package:flutter_essentials/features/ui_widgets/custom_chip.dart';
 import 'package:flutter_essentials/features/ui_widgets/custom_slider.dart';
 import 'package:flutter_essentials/features/ui_widgets/date_picker.dart';
 import 'package:flutter_essentials/features/ui_widgets/dropdown.dart';
+import 'package:flutter_essentials/features/ui_widgets/file_upload_button.dart';
 import 'package:flutter_essentials/features/ui_widgets/progress_indicator.dart';
 import 'package:flutter_essentials/features/ui_widgets/radio_button_group.dart';
 import 'package:flutter_essentials/features/ui_widgets/rating_bar.dart';
@@ -71,6 +72,8 @@ class UIWidgetsScreen extends StatelessWidget {
       _buildTagInputSection(context),
       const SizedBox(height: 20),
       _buildCustomColorPickerSection(context),
+      const SizedBox(height: 20),
+      _buildFileUploadButtonSection(context),
     ];
   }
 
@@ -351,6 +354,16 @@ Widget _buildSpeedDialFabSection(BuildContext context) {
         _showSnackBar(context, 'Selected Color: $color');
       }),
       description: 'A custom color picker widget.',
+      codeUrl: ' '
+    );
+  }
+  Widget _buildFileUploadButtonSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'File Upload Button',
+      widget: FileUploadButton()
+          ,
+      description: 'A button widget for uploading files.',
       codeUrl: ' '
     );
   }
