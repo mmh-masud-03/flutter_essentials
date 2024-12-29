@@ -8,7 +8,6 @@ import 'package:flutter_essentials/features/animations/shimmer_loading.dart';
 import 'package:flutter_essentials/features/animations/slide_transition.dart';
 import 'package:flutter_essentials/features/animations/typing.dart';
 import 'package:flutter_essentials/widgets/expendable_section.dart';
-
 import '../features/animations/flip_card.dart';
 import '../features/animations/particle.dart';
 import '../features/animations/pulse.dart';
