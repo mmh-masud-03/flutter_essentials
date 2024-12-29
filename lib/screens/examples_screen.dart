@@ -41,7 +41,7 @@ Widget _buildFormeSection(BuildContext context) {
           child: const Text('Open Form'),
         ),
       description: 'Create a form with validation and submission.',
-      codeUrl: ''
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/form.dart'
     );
   }
 
@@ -61,7 +61,7 @@ Widget _buildFormeSection(BuildContext context) {
             child: const Text('Open Grid'),
           ),
       description: 'Create a grid of items using GridView.builder.',
-      codeUrl: ' '
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/grid.dart'
     );
   }
   Widget _buildListSection(BuildContext context) {
@@ -80,7 +80,7 @@ Widget _buildFormeSection(BuildContext context) {
             child: const Text('Open List'),
           ),
       description: 'Create a list of items using ListView.builder.',
-      codeUrl: ' '
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/list.dart'
     );
   }
   Widget _buildCarouselSection(BuildContext context) {
@@ -99,7 +99,7 @@ Widget _buildFormeSection(BuildContext context) {
             child: const Text('Open Carousel'),
           ),
       description: 'Create a carousel of images using CarouselSlider.',
-      codeUrl: ' '
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/carousel.dart'
     );
   }
   Widget _buildTabsSection(BuildContext context) {
@@ -117,7 +117,7 @@ Widget _buildFormeSection(BuildContext context) {
         child: const Text('Open Tabs'),
       ),
       description: 'Implement tab navigation with TabBar and TabBarView.',
-      codeUrl: '',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/tabs.dart',
     );
   }
   Widget _buildSliversSection(BuildContext context) {
@@ -135,7 +135,7 @@ Widget _buildFormeSection(BuildContext context) {
         child: const Text('Open Slivers'),
       ),
       description: 'Learn about SliverAppBar, SliverList, and SliverGrid.',
-      codeUrl: '',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/silvers.dart',
     );
   }
   Widget _buildChartsSection(BuildContext context) {
@@ -153,7 +153,7 @@ Widget _buildFormeSection(BuildContext context) {
         child: const Text('Open Charts'),
       ),
       description: 'Visualize data using bar, line, and pie charts.',
-      codeUrl: '',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/charts.dart',
     );
   }
   Widget _buildDragAndDropSection(BuildContext context) {
@@ -171,7 +171,7 @@ Widget _buildFormeSection(BuildContext context) {
         child: const Text('Open Drag & Drop'),
       ),
       description: 'Explore drag-and-drop functionality in Flutter.',
-      codeUrl: '',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/drag_and_drop.dart',
     );
   }
   Widget _buildBottomBarSection(BuildContext context) {
@@ -189,7 +189,7 @@ Widget _buildFormeSection(BuildContext context) {
         child: const Text('Open Bottom Bar'),
       ),
       description: 'Create a bottom app bar with a floating action button.',
-      codeUrl: '',
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/bottom_bar.dart',
     );
   }
 
