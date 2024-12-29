@@ -1,4 +1,6 @@
 // Flip Card Animation
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 class FlipCard extends StatefulWidget {
