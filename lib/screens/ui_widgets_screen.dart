@@ -3,6 +3,7 @@ import 'package:flutter_essentials/features/ui_widgets/accordion.dart';
 import 'package:flutter_essentials/features/ui_widgets/badge.dart';
 import 'package:flutter_essentials/features/ui_widgets/card_widget.dart';
 import 'package:flutter_essentials/features/ui_widgets/circle_avatar.dart';
+import 'package:flutter_essentials/features/ui_widgets/color_picker.dart';
 import 'package:flutter_essentials/features/ui_widgets/custom_button.dart';
 import 'package:flutter_essentials/features/ui_widgets/custom_chip.dart';
 import 'package:flutter_essentials/features/ui_widgets/custom_slider.dart';
@@ -11,11 +12,16 @@ import 'package:flutter_essentials/features/ui_widgets/dropdown.dart';
 import 'package:flutter_essentials/features/ui_widgets/progress_indicator.dart';
 import 'package:flutter_essentials/features/ui_widgets/radio_button_group.dart';
 import 'package:flutter_essentials/features/ui_widgets/rating_bar.dart';
+import 'package:flutter_essentials/features/ui_widgets/speed_dial_fab.dart';
 import 'package:flutter_essentials/features/ui_widgets/stepper.dart';
 import 'package:flutter_essentials/features/ui_widgets/switch_widget.dart';
 import 'package:flutter_essentials/features/ui_widgets/text_field_widget.dart';
 import 'package:flutter_essentials/features/ui_widgets/toast_message.dart';
 import 'package:flutter_essentials/widgets/expendable_section.dart';
+
+import '../features/ui_widgets/search_bar.dart';
+import '../features/ui_widgets/skeleton_loading.dart';
+import '../features/ui_widgets/tag_input.dart';
 
 class UIWidgetsScreen extends StatelessWidget {
   const UIWidgetsScreen({super.key});
@@ -55,6 +61,16 @@ class UIWidgetsScreen extends StatelessWidget {
       _buildToastSection(context),
       const SizedBox(height: 20),
       _buildAccordionSection(context),
+      const SizedBox(height: 20),
+      _buildSearchBarSection(context),
+      const SizedBox(height: 20),
+      _buildSpeedDialFabSection(context),
+      const SizedBox(height: 20),
+      _buildSkeletonLoaderSection(context),
+      const SizedBox(height: 20),
+      _buildTagInputSection(context),
+      const SizedBox(height: 20),
+      _buildCustomColorPickerSection(context),
     ];
   }
 
@@ -268,6 +284,73 @@ class UIWidgetsScreen extends StatelessWidget {
 
       )),
       description: 'A collapsible accordion widget.',
+      codeUrl: ' '
+    );
+  }
+
+  Widget _buildSearchBarSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Search Bar',
+      widget: CustomSearchBar(
+        onChanged: (value) {
+          _showSnackBar(context, 'Searching for: $value');
+        },
+      ),
+      description: 'A search bar widget.',
+      codeUrl: ' '
+    );
+  }
+Widget _buildSpeedDialFabSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Speed Dial FAB',
+      widget: SpeedDialFAB(items: [
+        //each item contain label, icon and onPressed function
+        SpeedDialItem(label: 'Item 1', icon: Icons.ac_unit, onTap: () {}),
+        SpeedDialItem(label: 'Item 2', icon: Icons.access_alarm, onTap: () {}),
+        SpeedDialItem(label: 'Item 3', icon: Icons.access_time, onTap: () {}),
+
+      ]),
+      description: 'A floating action button with speed dial options.',
+      codeUrl: ' '
+    );
+  }
+  
+  Widget _buildSkeletonLoaderSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Skeleton Loader',
+      widget: SkeletonLoading(width: 200, height: 200,),
+      description: 'A skeleton loader widget.',
+      codeUrl: ' '
+    );
+  }
+  Widget _buildTagInputSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Tag Input',
+      widget: TagInput(
+        tags: ['Tag 1', 'Tag 2', 'Tag 3'], onTagsChanged: (List<String> value) {
+          _showSnackBar(context, 'Tags: ${value.join(', ')}');
+
+      },
+
+
+      ),
+      description: 'A tag input widget.',
+      codeUrl: ' '
+    );
+  }
+
+  Widget _buildCustomColorPickerSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Custom Color Picker',
+      widget: CustomColorPicker(selectedColor: Colors.blue , onColorChanged: (color) {
+        _showSnackBar(context, 'Selected Color: $color');
+      }),
+      description: 'A custom color picker widget.',
       codeUrl: ' '
     );
   }
