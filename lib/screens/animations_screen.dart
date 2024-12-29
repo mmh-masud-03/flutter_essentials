@@ -4,8 +4,14 @@ import 'package:flutter_essentials/features/animations/fade_transition.dart';
 import 'package:flutter_essentials/features/animations/hero_animation.dart';
 import 'package:flutter_essentials/features/animations/rotation.dart';
 import 'package:flutter_essentials/features/animations/scale_transition.dart';
+import 'package:flutter_essentials/features/animations/shimmer_loading.dart';
 import 'package:flutter_essentials/features/animations/slide_transition.dart';
+import 'package:flutter_essentials/features/animations/typing.dart';
 import 'package:flutter_essentials/widgets/expendable_section.dart';
+
+import '../features/animations/flip_card.dart';
+import '../features/animations/particle.dart';
+import '../features/animations/pulse.dart';
 
 class UIAnimationsScreen extends StatelessWidget {
   const UIAnimationsScreen({super.key});
@@ -23,6 +29,16 @@ class UIAnimationsScreen extends StatelessWidget {
       _buildHeroAnimationSection(context),
       const SizedBox(height: 20),
       _buildAnimatedContainerSection(context),
+      const SizedBox(height: 20),
+      _buildShimmerSection(context),
+      const SizedBox(height: 20),
+      _buildPulseSection(context),
+      const SizedBox(height: 20),
+      _buildFlipCardSection(context),
+      const SizedBox(height: 20),
+      _buildTypingTextSection(context),
+      const SizedBox(height: 20),
+      _buildParticleSection(context),
     ];
   }
 
@@ -83,6 +99,76 @@ class UIAnimationsScreen extends StatelessWidget {
       widget: const AnimatedContainerExample(),
       description: 'Animates changes in container properties like size, color, and more.',
       codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/animated_container.dart"
+    );
+  }
+
+  Widget _buildShimmerSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Shimmer Loading',
+      widget: const ShimmerLoadingAnimation(width: 200, height: 200),
+      description: 'Creates a shimmering effect to indicate loading.',
+      codeUrl: ""
+    );
+  }
+
+  Widget _buildPulseSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Pulse Animation',
+      widget: const PulseAnimation(child: Icon(Icons.favorite, size: 100, color: Colors.red)
+        ,),
+      description: 'Creates a pulsing effect on a widget.',
+      codeUrl: ""
+    );
+  }
+
+  Widget _buildFlipCardSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Flip Card',
+      widget: FlipCard(front:
+        Card(
+          child: Container(
+            height: 200,
+            width: 200,
+
+            child: Text('Front'),
+          ),
+        ),
+         back:
+        Card(
+          child: Container(
+            height: 200,
+            width: 200,
+
+            child: Text('Back'),
+          ),
+        )
+
+        ,),
+      description: 'Creates a card that flips to reveal another card.',
+      codeUrl: ""
+    );
+  }
+
+  Widget _buildTypingTextSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Typing Text',
+      widget: const TypingTextAnimation(text: 'Hello, World!', duration: Duration(seconds: 2)),
+      description: 'Simulates typing text on the screen.',
+      codeUrl: ""
+    );
+  }
+
+  Widget _buildParticleSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Particle Animation',
+      widget: const ParticleAnimation(),
+      description: 'Creates a particle effect on the screen.',
+      codeUrl: ""
     );
   }
 
