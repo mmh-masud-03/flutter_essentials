@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_essentials/features/ui_widgets/accordion.dart';
 import 'package:flutter_essentials/features/ui_widgets/badge.dart';
 import 'package:flutter_essentials/features/ui_widgets/card_widget.dart';
 import 'package:flutter_essentials/features/ui_widgets/circle_avatar.dart';
@@ -13,6 +14,7 @@ import 'package:flutter_essentials/features/ui_widgets/rating_bar.dart';
 import 'package:flutter_essentials/features/ui_widgets/stepper.dart';
 import 'package:flutter_essentials/features/ui_widgets/switch_widget.dart';
 import 'package:flutter_essentials/features/ui_widgets/text_field_widget.dart';
+import 'package:flutter_essentials/features/ui_widgets/toast_message.dart';
 import 'package:flutter_essentials/widgets/expendable_section.dart';
 
 class UIWidgetsScreen extends StatelessWidget {
@@ -48,7 +50,11 @@ class UIWidgetsScreen extends StatelessWidget {
       const SizedBox(height: 20),
       _buildStepperSection(context),
       const SizedBox(height: 20),
-      _buildSwitchSection(context)
+      _buildSwitchSection(context),
+      const SizedBox(height: 20),
+      _buildToastSection(context),
+      const SizedBox(height: 20),
+      _buildAccordionSection(context),
     ];
   }
 
@@ -243,7 +249,28 @@ class UIWidgetsScreen extends StatelessWidget {
       codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/circle_avatar.dart"
     );
   }
+  Widget _buildToastSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+        context,
+        title: 'Custom Toast',
+        widget: CustomToast(message: 'This is a custom toast message.'),
+        description: 'A custom toast message.',
+        codeUrl: " "
+    );
+  }
 
+  Widget _buildAccordionSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Accordion',
+      widget: CustomAccordion(title: "Accordion", content: Container(
+        child: Text("This is an accordion widget."),
+
+      )),
+      description: 'A collapsible accordion widget.',
+      codeUrl: ' '
+    );
+  }
   void _showSnackBar(BuildContext context, String message) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text(message)),

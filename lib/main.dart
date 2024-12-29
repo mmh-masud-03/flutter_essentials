@@ -18,6 +18,7 @@ import 'features/examples/silvers.dart';
 import 'features/examples/tabs.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
         "/slivers-screen":(context)=>SliversScreen(),
         "/charts-screen":(context)=>ChartsScreen(),
         "/drag-and-drop-screen":(context)=>DragAndDropScreen(),
-        "/bottom-bar":(context)=>BottomBarScreen()
+        "/bottom-bar":(context)=>BottomBarScreen(),
       },
       home: const HomeScreen(),
     );
