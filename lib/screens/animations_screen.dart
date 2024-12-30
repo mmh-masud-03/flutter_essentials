@@ -157,7 +157,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Typing Text',
       widget: const TypingTextAnimation(text: 'Hello, World!', duration: Duration(seconds: 2)),
       description: 'Simulates typing text on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/typing.dart"
     );
   }
 
