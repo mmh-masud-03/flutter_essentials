@@ -147,7 +147,7 @@ class UIAnimationsScreen extends StatelessWidget {
 
         ,),
       description: 'Creates a card that flips to reveal another card.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/flip_card.dart"
     );
   }
 
