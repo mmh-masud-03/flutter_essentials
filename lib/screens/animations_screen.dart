@@ -107,7 +107,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Shimmer Loading',
       widget: const ShimmerLoadingAnimation(width: 200, height: 200),
       description: 'Creates a shimmering effect to indicate loading.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/shimmer_loading.dart"
     );
   }
 
