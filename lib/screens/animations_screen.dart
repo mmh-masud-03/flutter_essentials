@@ -167,7 +167,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Particle Animation',
       widget: const ParticleAnimation(),
       description: 'Creates a particle effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/particle.dart"
     );
   }
 
