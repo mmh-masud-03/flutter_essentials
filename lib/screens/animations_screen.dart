@@ -118,7 +118,7 @@ class UIAnimationsScreen extends StatelessWidget {
       widget: const PulseAnimation(child: Icon(Icons.favorite, size: 100, color: Colors.red)
         ,),
       description: 'Creates a pulsing effect on a widget.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/pulse.dart"
     );
   }
 
