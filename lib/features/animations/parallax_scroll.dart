@@ -1,4 +1,3 @@
-// Parallax Scroll Animation
 import 'package:flutter/material.dart';
 
 class ParallaxScrollAnimation extends StatefulWidget {

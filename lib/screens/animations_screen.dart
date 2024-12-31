@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_essentials/features/animations/animated_container.dart';
+import 'package:flutter_essentials/features/animations/confetti_animation.dart';
 import 'package:flutter_essentials/features/animations/fade_transition.dart';
 import 'package:flutter_essentials/features/animations/hero_animation.dart';
+import 'package:flutter_essentials/features/animations/liquid_wave.dart';
+import 'package:flutter_essentials/features/animations/morphing_shape.dart';
+import 'package:flutter_essentials/features/animations/parallax_scroll.dart';
 import 'package:flutter_essentials/features/animations/rotation.dart';
 import 'package:flutter_essentials/features/animations/scale_transition.dart';
 import 'package:flutter_essentials/features/animations/shimmer_loading.dart';
 import 'package:flutter_essentials/features/animations/slide_transition.dart';
+import 'package:flutter_essentials/features/animations/spring.dart';
 import 'package:flutter_essentials/features/animations/typing.dart';
 import 'package:flutter_essentials/widgets/expendable_section.dart';
 import '../features/animations/flip_card.dart';
@@ -38,6 +43,16 @@ class UIAnimationsScreen extends StatelessWidget {
       _buildTypingTextSection(context),
       const SizedBox(height: 20),
       _buildParticleSection(context),
+      const SizedBox(height: 20),
+      _buildConfettiSection(context),
+      const SizedBox(height: 20),
+      _buildParallaxScrollSection(context),
+      const SizedBox(height: 20),
+      _buildLiquidWaveSection(context),
+      const SizedBox(height: 20),
+      _buildMorphingSection(context),
+      const SizedBox(height: 20),
+      _buildSpringSection(context),
     ];
   }
 
@@ -167,6 +182,62 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Particle Animation',
       widget: const ParticleAnimation(),
       description: 'Creates a particle effect on the screen.',
+      codeUrl: ""
+    );
+  }
+
+  Widget _buildConfettiSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Confetti Animation',
+      widget: const ConfettiAnimation(),
+      description: 'Creates a confetti effect on the screen.',
+      codeUrl: ""
+    );
+  }
+
+  Widget _buildParallaxScrollSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Parallax Scroll',
+      widget: const ParallaxScrollAnimation(imagePaths: [
+        'assets/images/parallax1.jpg',
+        'assets/images/parallax2.jpg',
+        'assets/images/parallax3.jpg',
+        'assets/images/parallax4.jpg',
+        'assets/images/parallax5.jpg',
+      ]),
+      description: 'Creates a parallax effect on the screen.',
+      codeUrl: ""
+    );
+  }
+
+  Widget _buildLiquidWaveSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Liquid Wave',
+      widget: const LiquidWaveAnimation(),
+      description: 'Creates a liquid wave effect on the screen.',
+      codeUrl: ""
+    );
+  }
+
+  Widget _buildMorphingSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Morphing',
+      widget: const MorphingShapeAnimation(),
+      description: 'Creates a morphing effect on the screen.',
+      codeUrl: ""
+    );
+  }
+
+  Widget _buildSpringSection(BuildContext context) {
+    return ExpandableSection.buildExpandableSection(
+      context,
+      title: 'Spring',
+      widget: const SpringAnimation(child: Icon(Icons.star, size: 50, color: Colors.blue)),
+      description: 'Creates a spring effect on the screen.',
       codeUrl: ""
     );
   }
