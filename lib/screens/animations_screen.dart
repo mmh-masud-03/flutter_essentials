@@ -122,7 +122,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Shimmer Loading',
       widget: const ShimmerLoadingAnimation(width: 200, height: 200),
       description: 'Creates a shimmering effect to indicate loading.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/shimmer_loading.dart"
     );
   }
 
@@ -133,7 +133,7 @@ class UIAnimationsScreen extends StatelessWidget {
       widget: const PulseAnimation(child: Icon(Icons.favorite, size: 100, color: Colors.red)
         ,),
       description: 'Creates a pulsing effect on a widget.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/pulse.dart"
     );
   }
 
@@ -162,7 +162,7 @@ class UIAnimationsScreen extends StatelessWidget {
 
         ,),
       description: 'Creates a card that flips to reveal another card.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/flip_card.dart"
     );
   }
 
@@ -172,7 +172,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Typing Text',
       widget: const TypingTextAnimation(text: 'Hello, World!', duration: Duration(seconds: 2)),
       description: 'Simulates typing text on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/typing.dart"
     );
   }
 
@@ -182,7 +182,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Particle Animation',
       widget: const ParticleAnimation(),
       description: 'Creates a particle effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/particle.dart"
     );
   }
 
