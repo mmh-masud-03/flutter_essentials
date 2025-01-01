@@ -208,7 +208,7 @@ class UIAnimationsScreen extends StatelessWidget {
         'assets/images/parallax5.jpg',
       ]),
       description: 'Creates a parallax effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/parallax_scroll.dart"
     );
   }
 
