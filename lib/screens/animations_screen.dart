@@ -192,7 +192,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Confetti Animation',
       widget: const ConfettiAnimation(),
       description: 'Creates a confetti effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/confetti_animation.dart"
     );
   }
 
