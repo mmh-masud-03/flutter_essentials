@@ -238,7 +238,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Spring',
       widget: const SpringAnimation(child: Icon(Icons.star, size: 50, color: Colors.blue)),
       description: 'Creates a spring effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/spring.dart"
     );
   }
 
