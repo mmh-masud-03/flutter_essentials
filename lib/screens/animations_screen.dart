@@ -228,7 +228,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Morphing',
       widget: const MorphingShapeAnimation(),
       description: 'Creates a morphing effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/morphing_shape.dart"
     );
   }
 
