@@ -7,7 +7,7 @@ class ChartsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Charts Example')),
+      appBar: AppBar(title: const Text('Charts Example'), centerTitle: true,),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
