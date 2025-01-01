@@ -218,7 +218,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Liquid Wave',
       widget: const LiquidWaveAnimation(),
       description: 'Creates a liquid wave effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/liquid_wave.dart"
     );
   }
 
