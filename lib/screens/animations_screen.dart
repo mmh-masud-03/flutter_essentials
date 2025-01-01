@@ -192,7 +192,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Confetti Animation',
       widget: const ConfettiAnimation(),
       description: 'Creates a confetti effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/confetti_animation.dart"
     );
   }
 
@@ -208,7 +208,7 @@ class UIAnimationsScreen extends StatelessWidget {
         'assets/images/parallax5.jpg',
       ]),
       description: 'Creates a parallax effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/parallax_scroll.dart"
     );
   }
 
@@ -218,7 +218,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Liquid Wave',
       widget: const LiquidWaveAnimation(),
       description: 'Creates a liquid wave effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/liquid_wave.dart"
     );
   }
 
@@ -228,7 +228,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Morphing',
       widget: const MorphingShapeAnimation(),
       description: 'Creates a morphing effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/morphing_shape.dart"
     );
   }
 
@@ -238,7 +238,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Spring',
       widget: const SpringAnimation(child: Icon(Icons.star, size: 50, color: Colors.blue)),
       description: 'Creates a spring effect on the screen.',
-      codeUrl: ""
+      codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/spring.dart"
     );
   }
 
