@@ -44,10 +44,10 @@ class UIAnimationsScreen extends StatelessWidget {
       const SizedBox(height: 20),
       _buildParticleSection(context),
       const SizedBox(height: 20),
-      // _buildConfettiSection(context),
-      // const SizedBox(height: 20),
-      // _buildParallaxScrollSection(context),
-      // const SizedBox(height: 20),
+      _buildConfettiSection(context),
+      const SizedBox(height: 20),
+      _buildParallaxScrollSection(context),
+      const SizedBox(height: 20),
       _buildLiquidWaveSection(context),
       const SizedBox(height: 20),
       _buildMorphingSection(context),
@@ -190,7 +190,15 @@ class UIAnimationsScreen extends StatelessWidget {
     return ExpandableSection.buildExpandableSection(
       context,
       title: 'Confetti Animation',
-      widget: const ConfettiAnimation(),
+      widget: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.white, backgroundColor: Colors.blue,
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed('/confetti');
+        },
+        child: const Text('Open Confetti Animation'),
+      ),
       description: 'Creates a confetti effect on the screen.',
       codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/confetti_animation.dart"
     );
@@ -200,13 +208,15 @@ class UIAnimationsScreen extends StatelessWidget {
     return ExpandableSection.buildExpandableSection(
       context,
       title: 'Parallax Scroll',
-      widget: const ParallaxScrollAnimation(imagePaths: [
-        'assets/images/parallax1.jpg',
-        'assets/images/parallax2.jpg',
-        'assets/images/parallax3.jpg',
-        'assets/images/parallax4.jpg',
-        'assets/images/parallax5.jpg',
-      ]),
+      widget: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.white, backgroundColor: Colors.blue,
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed('/parallax-scroll');
+        },
+        child: const Text('Open Parallax Scroll'),
+      ),
       description: 'Creates a parallax effect on the screen.',
       codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/parallax_scroll.dart"
     );
