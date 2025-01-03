@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_essentials/features/animations/confetti_animation.dart';
+import 'package:flutter_essentials/features/animations/spring.dart';
 import 'package:flutter_essentials/features/boilerplates/drawer.dart';
 import 'package:flutter_essentials/features/examples/bottom_bar.dart';
 import 'package:flutter_essentials/features/examples/form.dart';
@@ -45,6 +46,7 @@ class MyApp extends StatelessWidget {
   static const String bottomBarRoute = '/bottom-bar';
   static const String confettiRoute = '/confetti';
   static const String parallaxScrollRoute = '/parallax-scroll';
+  static const String springRoute = '/spring';
 
   // Sample parallax items
   static final List<ParallaxItem> parallaxItems = [
@@ -119,6 +121,7 @@ class MyApp extends StatelessWidget {
         dragAndDropRoute: (context) => const DragAndDropScreen(),
         bottomBarRoute: (context) => const BottomBarScreen(),
         confettiRoute: (context) => const ConfettiAnimation(),
+        springRoute: (context) =>const FullscreenSpringDemo(),
         parallaxScrollRoute: (context) => ParallaxScrollAnimation(
           items: parallaxItems,
           itemExtent: 300,

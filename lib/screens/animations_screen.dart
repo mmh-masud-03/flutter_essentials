@@ -246,7 +246,15 @@ class UIAnimationsScreen extends StatelessWidget {
     return ExpandableSection.buildExpandableSection(
       context,
       title: 'Spring',
-      widget: const SpringAnimation(child: Icon(Icons.star, size: 50, color: Colors.blue)),
+      widget: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.white, backgroundColor: Colors.blue,
+        ),
+        onPressed: () {
+          Navigator.of(context).pushNamed('/spring');
+        },
+        child: const Text('Open Spring Animation'),
+      ),
       description: 'Creates a spring effect on the screen.',
       codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/animations/spring.dart"
     );
