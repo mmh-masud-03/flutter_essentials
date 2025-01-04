@@ -340,6 +340,7 @@ class _FormExampleState extends State<FormExample> {
         Row(
           children: [
             Expanded(
+              flex: 1,
               child: TextFormField(
                 decoration: const InputDecoration(
                   labelText: 'ZIP Code *',
@@ -355,8 +356,9 @@ class _FormExampleState extends State<FormExample> {
                 onSaved: (value) => _zipCode = value!,
               ),
             ),
-            const SizedBox(width: 16),
+            const SizedBox(width: 6),
             Expanded(
+              flex: 2,
               child: DropdownButtonFormField<String>(
                 decoration: const InputDecoration(
                   labelText: 'Country *',
