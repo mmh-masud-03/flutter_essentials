@@ -22,38 +22,83 @@ class UIAnimationsScreen extends StatelessWidget {
 
   List<Widget> _buildAnimationSections(BuildContext context) {
     return [
-      _buildFadeTransitionSection(context),
-      const SizedBox(height: 20),
-      _buildScaleTransitionSection(context),
-      const SizedBox(height: 20),
-      _buildSlideTransitionSection(context),
-      const SizedBox(height: 20),
-      _buildRotationTransitionSection(context),
-      const SizedBox(height: 20),
-      _buildHeroAnimationSection(context),
-      const SizedBox(height: 20),
-      _buildAnimatedContainerSection(context),
-      const SizedBox(height: 20),
-      _buildShimmerSection(context),
-      const SizedBox(height: 20),
-      _buildPulseSection(context),
-      const SizedBox(height: 20),
-      _buildFlipCardSection(context),
-      const SizedBox(height: 20),
-      _buildTypingTextSection(context),
-      const SizedBox(height: 20),
-      _buildParticleSection(context),
-      const SizedBox(height: 20),
-      _buildConfettiSection(context),
-      const SizedBox(height: 20),
-      _buildParallaxScrollSection(context),
-      const SizedBox(height: 20),
-      _buildLiquidWaveSection(context),
-      const SizedBox(height: 20),
-      _buildMorphingSection(context),
-      const SizedBox(height: 20),
-      _buildSpringSection(context),
+      _buildHeader(context),
+      const SizedBox(height: 24),
+      ..._buildCategorizedAnimations(context),
     ];
+  }
+
+  Widget _buildHeader(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Animation Gallery',
+            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: Theme.of(context).primaryColor,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Explore various animation techniques in Flutter',
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+              color: Colors.grey[600],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+  List<Widget> _buildCategorizedAnimations(BuildContext context) {
+    final categories = {
+      'Basic Transitions': [
+        _buildFadeTransitionSection(context),
+        _buildScaleTransitionSection(context),
+        _buildSlideTransitionSection(context),
+        _buildRotationTransitionSection(context),
+      ],
+      'Container Animations': [
+        _buildAnimatedContainerSection(context),
+        _buildFlipCardSection(context),
+        _buildMorphingSection(context),
+      ],
+      'Loading & Effects': [
+        _buildShimmerSection(context),
+        _buildPulseSection(context),
+        _buildParticleSection(context),
+        _buildLiquidWaveSection(context),
+      ],
+      'Interactive Animations': [
+        _buildHeroAnimationSection(context),
+        _buildTypingTextSection(context),
+        _buildConfettiSection(context),
+        _buildParallaxScrollSection(context),
+        _buildSpringSection(context),
+      ],
+    };
+
+    return categories.entries.expand((category) {
+      return [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          child: Text(
+            category.key,
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
+              fontWeight: FontWeight.bold,
+              color: Theme.of(context).primaryColor,
+            ),
+          ),
+        ),
+        ...category.value.map((widget) => Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          child: widget,
+        )),
+        const SizedBox(height: 24),
+      ];
+    }).toList();
   }
 
   Widget _buildFadeTransitionSection(BuildContext context) {
@@ -264,15 +309,24 @@ class UIAnimationsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animations'),
+        elevation: 0,
+        backgroundColor: Theme.of(context).primaryColor,
+        title: const Text(
+          'Animations',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
         centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 2.0, vertical: 6.0),
+      body: Container(
+        color: Colors.grey[50],
         child: ListView(
           children: _buildAnimationSections(context),
         ),
       ),
     );
   }
+
 }

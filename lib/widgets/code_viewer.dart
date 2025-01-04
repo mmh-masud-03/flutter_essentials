@@ -174,7 +174,7 @@ class _CodeViewerState extends State<CodeViewer> {
           padding: const EdgeInsets.all(16),
           textStyle: const TextStyle(
             fontFamily: 'monospace',
-            fontSize: 14,
+            fontSize: 12,
             height: 1.5,
           ),
         ),
