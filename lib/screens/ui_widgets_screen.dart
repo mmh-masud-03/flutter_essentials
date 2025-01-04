@@ -354,7 +354,7 @@ Widget _buildSpeedDialFabSection(BuildContext context) {
         _showSnackBar(context, 'Selected Color: $color');
       }),
       description: 'A custom color picker widget.',
-      codeUrl: ' '
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/color_picker.dart'
     );
   }
   Widget _buildFileUploadButtonSection(BuildContext context) {
