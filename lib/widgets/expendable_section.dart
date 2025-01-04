@@ -188,6 +188,7 @@ class ExpandableSection {
               style: theme.textTheme.titleLarge?.copyWith(
                 color: theme.colorScheme.onPrimary,
                 fontWeight: FontWeight.w600,
+                fontSize: 18
               ),
             ),
           ),
