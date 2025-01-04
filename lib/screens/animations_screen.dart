@@ -268,7 +268,7 @@ class UIAnimationsScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 2.0, vertical: 6.0),
         child: ListView(
           children: _buildAnimationSections(context),
         ),

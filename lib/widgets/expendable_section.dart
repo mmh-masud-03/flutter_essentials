@@ -50,6 +50,7 @@ class ExpandableSection {
                         theme.textTheme.titleLarge?.copyWith(
                           fontWeight: FontWeight.bold,
                           letterSpacing: 0.3,
+                          fontSize: 16,
                         ),
                   ),
                 ),
