@@ -274,7 +274,7 @@ class UIWidgetsScreen extends StatelessWidget {
         title: 'Custom Toast',
         widget: CustomToast(message: 'This is a custom toast message.'),
         description: 'A custom toast message.',
-        codeUrl: " "
+        codeUrl: "https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/toast_message.dart"
     );
   }
 
