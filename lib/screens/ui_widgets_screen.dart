@@ -316,7 +316,7 @@ Widget _buildSpeedDialFabSection(BuildContext context) {
 
       ]),
       description: 'A floating action button with speed dial options.',
-      codeUrl: ' '
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/speed_dial_fab.dart '
     );
   }
   
