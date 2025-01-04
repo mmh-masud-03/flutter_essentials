@@ -287,7 +287,7 @@ class UIWidgetsScreen extends StatelessWidget {
 
       )),
       description: 'A collapsible accordion widget.',
-      codeUrl: ' '
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/accordion.dart'
     );
   }
 
