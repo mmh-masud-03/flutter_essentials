@@ -364,7 +364,7 @@ Widget _buildSpeedDialFabSection(BuildContext context) {
       widget: FileUploadButton()
           ,
       description: 'A button widget for uploading files.',
-      codeUrl: ' '
+      codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/ui_widgets/file_upload_button.dart'
     );
   }
   void _showSnackBar(BuildContext context, String message) {
