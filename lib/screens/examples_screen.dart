@@ -33,7 +33,7 @@ Widget _buildFormeSection(BuildContext context) {
       widget:
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.white, backgroundColor: Colors.blue,
+            foregroundColor: Colors.white, backgroundColor: Theme.of(context).primaryColor
           ),
           onPressed: () {
             Navigator.of(context).pushNamed('/form-screen');
@@ -53,7 +53,7 @@ Widget _buildFormeSection(BuildContext context) {
           // a button to open the grid screen
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              foregroundColor: Colors.white, backgroundColor: Colors.blue,
+              foregroundColor: Colors.white, backgroundColor: Theme.of(context).primaryColor
             ),
             onPressed: () {
               Navigator.of(context).pushNamed('/grid-screen');
@@ -72,7 +72,7 @@ Widget _buildFormeSection(BuildContext context) {
           // a button to open the list screen
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              foregroundColor: Colors.white, backgroundColor: Colors.blue,
+              foregroundColor: Colors.white, backgroundColor: Theme.of(context).primaryColor
             ),
             onPressed: () {
               Navigator.of(context).pushNamed('/list-screen');
@@ -91,7 +91,7 @@ Widget _buildFormeSection(BuildContext context) {
           // a button to open the carousel screen
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              foregroundColor: Colors.white, backgroundColor: Colors.blue,
+              foregroundColor: Colors.white, backgroundColor: Theme.of(context).primaryColor
             ),
             onPressed: () {
               Navigator.of(context).pushNamed('/carousel-screen');
@@ -109,7 +109,7 @@ Widget _buildFormeSection(BuildContext context) {
       widget: ElevatedButton(
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
-          backgroundColor: Colors.blue,
+            backgroundColor: Theme.of(context).primaryColor
         ),
         onPressed: () {
           Navigator.of(context).pushNamed('/tabs-screen');
@@ -127,7 +127,7 @@ Widget _buildFormeSection(BuildContext context) {
       widget: ElevatedButton(
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
-          backgroundColor: Colors.blue,
+            backgroundColor: Theme.of(context).primaryColor
         ),
         onPressed: () {
           Navigator.of(context).pushNamed('/slivers-screen');
@@ -145,7 +145,7 @@ Widget _buildFormeSection(BuildContext context) {
       widget: ElevatedButton(
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
-          backgroundColor: Colors.blue,
+            backgroundColor: Theme.of(context).primaryColor
         ),
         onPressed: () {
           Navigator.of(context).pushNamed('/charts-screen');
@@ -163,7 +163,7 @@ Widget _buildFormeSection(BuildContext context) {
       widget: ElevatedButton(
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
-          backgroundColor: Colors.blue,
+            backgroundColor: Theme.of(context).primaryColor
         ),
         onPressed: () {
           Navigator.of(context).pushNamed('/drag-and-drop-screen');
@@ -181,7 +181,7 @@ Widget _buildFormeSection(BuildContext context) {
       widget: ElevatedButton(
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
-          backgroundColor: Colors.blue,
+            backgroundColor: Theme.of(context).primaryColor
         ),
         onPressed: () {
           Navigator.of(context).pushNamed('/bottom-bar');
@@ -198,6 +198,7 @@ Widget _buildFormeSection(BuildContext context) {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
         title: const Text('Examples'),
         centerTitle: true,
       ),

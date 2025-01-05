@@ -213,6 +213,7 @@ class _UIWidgetsScreenState extends State<UIWidgetsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Theme.of(context).primaryColor,
         title: const Text('UI Components'),
         centerTitle: true,
         bottom: PreferredSize(
