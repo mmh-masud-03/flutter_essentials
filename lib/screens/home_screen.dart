@@ -92,6 +92,12 @@ class HomeScreen extends StatelessWidget {
                           description: 'View sample implementations',
                           onTap: () => Navigator.of(context).pushNamed('/examples'),
                         ),
+                        _FeatureCard(
+                          icon: Icons.language,
+                          title: 'Internationalization',
+                          description: 'Multi-language support setup',
+                          onTap: () => Navigator.of(context).pushNamed('/internationalization'),
+                        ),
                       ],
                     ),
                   ],
@@ -141,45 +147,61 @@ class _FeatureCard extends StatelessWidget {
               ),
             ],
           ),
-          child: Padding(
-            padding: EdgeInsets.all(isTablet ? 24.0 : 16.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  padding: EdgeInsets.all(isTablet ? 16.0 : 12.0),
-                  decoration: BoxDecoration(
-                    color: Theme.of(context).primaryColor.withOpacity(0.1),
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Icon(
-                    icon,
-                    size: isTablet ? 40 : 32,
-                    color: Theme.of(context).primaryColor,
-                  ),
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              // Calculate adaptive padding based on available space
+              final padding = constraints.maxWidth * 0.1;
+              final iconSize = isTablet ?
+              constraints.maxWidth * 0.25 :
+              constraints.maxWidth * 0.18;
+
+              return Padding(
+                padding: EdgeInsets.all(padding),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(padding * 0.5),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).primaryColor.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Icon(
+                        icon,
+                        size: iconSize,
+                        color: Theme.of(context).primaryColor,
+                      ),
+                    ),
+                    SizedBox(height: padding * 0.5),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        title,
+                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          fontSize: isTablet ? 18 : 14,
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    SizedBox(height: padding * 0.25),
+                    Flexible(
+                      child: Text(
+                        description,
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                          color: Colors.grey[600],
+                          fontSize: isTablet ? 14 : 12,
+                        ),
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
                 ),
-                SizedBox(height: isTablet ? 16.0 : 12.0),
-                Text(
-                  title,
-                  style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    fontSize: isTablet ? 18 : null,
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                SizedBox(height: isTablet ? 8.0 : 4.0),
-                Text(
-                  description,
-                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.grey[600],
-                    fontSize: isTablet ? 14 : null,
-                  ),
-                  textAlign: TextAlign.center,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ],
-            ),
+              );
+            },
           ),
         ),
       ),

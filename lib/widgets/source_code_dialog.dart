@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_essentials/core/utils/formatter.dart';
 import 'package:flutter_essentials/widgets/code_viewer.dart';
-import 'package:flutter_essentials/widgets/copy_button.dart';
-import 'package:flutter_highlight/flutter_highlight.dart';
-import 'package:flutter_highlight/themes/github.dart';
+
 
 class SourceCodeDialog{
   static void showCodeDialog(
