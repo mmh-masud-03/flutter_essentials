@@ -176,11 +176,15 @@ class _UIWidgetsScreenState extends State<UIWidgetsScreen> {
           CustomButton(
             label: 'Secondary Button',
             // variant: ButtonVariant.secondary,
+            //make the design of the button secondary
+            color: Colors.blue[400],
+
             onPressed: () => _showSnackBar(context, 'Secondary Button Pressed'),
           ),
           const SizedBox(height: 8),
           CustomButton(
             label: 'Outlined Button',
+            color: Colors.transparent,
             // variant: ButtonVariant.outlined,
             onPressed: () => _showSnackBar(context, 'Outlined Button Pressed'),
           ),

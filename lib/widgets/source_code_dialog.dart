@@ -57,7 +57,7 @@ class SourceCodeDialog{
     final theme = Theme.of(context);
 
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
       decoration: BoxDecoration(
         color: theme.primaryColor,
         borderRadius: const BorderRadius.only(
@@ -74,7 +74,7 @@ class SourceCodeDialog{
               style: theme.textTheme.titleLarge?.copyWith(
                   color: theme.colorScheme.onPrimary,
                   fontWeight: FontWeight.w600,
-                  fontSize: 18
+                  fontSize: 16
               ),
             ),
           ),
