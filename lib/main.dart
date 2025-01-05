@@ -9,6 +9,7 @@ import 'package:flutter_essentials/screens/api_integration_screen.dart';
 import 'package:flutter_essentials/screens/boilerplates_screen.dart';
 import 'package:flutter_essentials/screens/examples_screen.dart';
 import 'package:flutter_essentials/screens/home_screen.dart';
+import 'package:flutter_essentials/screens/internationalization.dart';
 import 'package:flutter_essentials/screens/ui_widgets_screen.dart';
 import 'core/theme/app_theme.dart';
 import 'features/animations/parallax_scroll.dart';
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
   static const String confettiRoute = '/confetti';
   static const String parallaxScrollRoute = '/parallax-scroll';
   static const String springRoute = '/spring';
+  static const String internationalizationRoute = '/internationalization';
 
   // Sample parallax items
   static final List<ParallaxItem> parallaxItems = [
@@ -122,6 +124,7 @@ class MyApp extends StatelessWidget {
         bottomBarRoute: (context) => const BottomBarScreen(),
         confettiRoute: (context) => const ConfettiAnimation(),
         springRoute: (context) =>const FullscreenSpringDemo(),
+        internationalizationRoute: (context) => const InternationalizationScreen(),
         parallaxScrollRoute: (context) => ParallaxScrollAnimation(
           items: parallaxItems,
           itemExtent: 300,
