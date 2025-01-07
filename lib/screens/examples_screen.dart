@@ -6,7 +6,7 @@ class ExamplesScreen extends StatelessWidget {
 
   List<Widget> _buildExampleSections(BuildContext context) {
     return [
-      _buildFormeSection(context),
+      _buildFormSection(context),
       const SizedBox(height: 20),
       _buildGridSection(context),
       const SizedBox(height: 20),
@@ -26,7 +26,7 @@ class ExamplesScreen extends StatelessWidget {
 
     ];
   }
-Widget _buildFormeSection(BuildContext context) {
+  Widget _buildFormSection(BuildContext context) {
     return ExpandableSection.buildExpandableSection(
       context,
       title: 'Form',
@@ -44,7 +44,6 @@ Widget _buildFormeSection(BuildContext context) {
       codeUrl: 'https://github.com/mmh-masud-03/flutter_essentials/raw/refs/heads/master/lib/features/examples/form.dart'
     );
   }
-
   Widget _buildGridSection(BuildContext context) {
     return ExpandableSection.buildExpandableSection(
       context,
