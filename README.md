@@ -20,8 +20,34 @@ samples, guidance on mobile development, and a full API reference.
 ### Home Screen
 ![Home Screen](assets/screenshots/ss1.png)
 
-### Settings Screen
-![Settings Screen](screenshots/settings_screen.png)
+### UI Components Screen
+![UI Components Screen](assets/screenshots/ss2.png)
 
-### Profile Screen
-![Profile Screen](screenshots/profile_screen.png)
+![UI Components Screen 2](assets/screenshots/ss3.png)
+
+### Code Viewer Modal
+![Code Viewer Modal](assets/screenshots/ss4.png)
+
+### Animations Screen
+![Animations Screen](assets/screenshots/ss5.png)
+
+### Boilerplate's Screen
+![Boilerplate's Screen](assets/screenshots/ss6.png)
+
+### API Methods Screen
+![API Methods Screen](assets/screenshots/ss7.png)
+
+### Examples Screen
+![Examples Screen](assets/screenshots/ss8.png)
+
+### Sliver Screen
+![Sliver Screen](assets/screenshots/ss9.png)
+
+### Charts Screen
+![Charts Screen](assets/screenshots/ss10.png)
+
+### Custom Bottom Bar Screen
+![Custom Bottom Bar Screen](assets/screenshots/ss11.png)
+
+### Internationalization Screen
+![Internationalization Screen](assets/screenshots/ss12.png)
