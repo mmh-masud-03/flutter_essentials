@@ -18,36 +18,36 @@ samples, guidance on mobile development, and a full API reference.
 ## Screenshots
 
 ### Home Screen
-![Home Screen](assets/screenshots/ss1.png)
+<img src="assets/screenshots/ss1.png" width="300" height="600" alt="Home Screen">
 
 ### UI Components Screen
-![UI Components Screen](assets/screenshots/ss2.png)
+<img src="assets/screenshots/ss2.png" width="300" height="600" alt="UI Components Screen">
 
-![UI Components Screen 2](assets/screenshots/ss3.png)
+<img src="assets/screenshots/ss3.png" width="300" height="600" alt="UI Components Screen 2">
 
 ### Code Viewer Modal
-![Code Viewer Modal](assets/screenshots/ss4.png)
+<img src="assets/screenshots/ss4.png" width="300" height="600" alt="Code Viewer Modal">
 
 ### Animations Screen
-![Animations Screen](assets/screenshots/ss5.png)
+<img src="assets/screenshots/ss5.png" width="300" height="600" alt="Animations Screen">
 
 ### Boilerplate's Screen
-![Boilerplate's Screen](assets/screenshots/ss6.png)
+<img src="assets/screenshots/ss6.png" width="300" height="600" alt="Boilerplate's Screen">
 
 ### API Methods Screen
-![API Methods Screen](assets/screenshots/ss7.png)
+<img src="assets/screenshots/ss7.png" width="300" height="600" alt="API Methods Screen">
 
 ### Examples Screen
-![Examples Screen](assets/screenshots/ss8.png)
+<img src="assets/screenshots/ss8.png" width="300" height="600" alt="Examples Screen">
 
 ### Sliver Screen
-![Sliver Screen](assets/screenshots/ss9.png)
+<img src="assets/screenshots/ss9.png" width="300" height="600" alt="Sliver Screen">
 
 ### Charts Screen
-![Charts Screen](assets/screenshots/ss10.png)
+<img src="assets/screenshots/ss10.png" width="300" height="600" alt="Charts Screen">
 
 ### Custom Bottom Bar Screen
-![Custom Bottom Bar Screen](assets/screenshots/ss11.png)
+<img src="assets/screenshots/ss11.png" width="300" height="600" alt="Custom Bottom Bar Screen">
 
 ### Internationalization Screen
-![Internationalization Screen](assets/screenshots/ss12.png)
+<img src="assets/screenshots/ss12.png" width="300" height="600" alt="Internationalization Screen">
