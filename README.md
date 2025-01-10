@@ -17,37 +17,53 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screenshots
 
-### Home Screen
-<img src="assets/screenshots/ss1.png" width="300" height="600" alt="Home Screen">
-
-### UI Components Screen
-<img src="assets/screenshots/ss2.png" width="300" height="600" alt="UI Components Screen">
-
-<img src="assets/screenshots/ss3.png" width="300" height="600" alt="UI Components Screen 2">
-
-### Code Viewer Modal
-<img src="assets/screenshots/ss4.png" width="300" height="600" alt="Code Viewer Modal">
-
-### Animations Screen
-<img src="assets/screenshots/ss5.png" width="300" height="600" alt="Animations Screen">
-
-### Boilerplate's Screen
-<img src="assets/screenshots/ss6.png" width="300" height="600" alt="Boilerplate's Screen">
-
-### API Methods Screen
-<img src="assets/screenshots/ss7.png" width="300" height="600" alt="API Methods Screen">
-
-### Examples Screen
-<img src="assets/screenshots/ss8.png" width="300" height="600" alt="Examples Screen">
-
-### Sliver Screen
-<img src="assets/screenshots/ss9.png" width="300" height="600" alt="Sliver Screen">
-
-### Charts Screen
-<img src="assets/screenshots/ss10.png" width="300" height="600" alt="Charts Screen">
-
-### Custom Bottom Bar Screen
-<img src="assets/screenshots/ss11.png" width="300" height="600" alt="Custom Bottom Bar Screen">
-
-### Internationalization Screen
-<img src="assets/screenshots/ss12.png" width="300" height="600" alt="Internationalization Screen">
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+    <div>
+        <h3>Home Screen</h3>
+        <img src="assets/screenshots/ss1.png" width="300" height="600" alt="Home Screen">
+    </div>
+    <div>
+        <h3>UI Components Screen</h3>
+        <img src="assets/screenshots/ss2.png" width="300" height="600" alt="UI Components Screen">
+    </div>
+    <div>
+        <h3>UI Components Screen 2</h3>
+        <img src="assets/screenshots/ss3.png" width="300" height="600" alt="UI Components Screen 2">
+    </div>
+    <div>
+        <h3>Code Viewer Modal</h3>
+        <img src="assets/screenshots/ss4.png" width="300" height="600" alt="Code Viewer Modal">
+    </div>
+    <div>
+        <h3>Animations Screen</h3>
+        <img src="assets/screenshots/ss5.png" width="300" height="600" alt="Animations Screen">
+    </div>
+    <div>
+        <h3>Boilerplate's Screen</h3>
+        <img src="assets/screenshots/ss6.png" width="300" height="600" alt="Boilerplate's Screen">
+    </div>
+    <div>
+        <h3>API Methods Screen</h3>
+        <img src="assets/screenshots/ss7.png" width="300" height="600" alt="API Methods Screen">
+    </div>
+    <div>
+        <h3>Examples Screen</h3>
+        <img src="assets/screenshots/ss8.png" width="300" height="600" alt="Examples Screen">
+    </div>
+    <div>
+        <h3>Sliver Screen</h3>
+        <img src="assets/screenshots/ss9.png" width="300" height="600" alt="Sliver Screen">
+    </div>
+    <div>
+        <h3>Charts Screen</h3>
+        <img src="assets/screenshots/ss10.png" width="300" height="600" alt="Charts Screen">
+    </div>
+    <div>
+        <h3>Custom Bottom Bar Screen</h3>
+        <img src="assets/screenshots/ss11.png" width="300" height="600" alt="Custom Bottom Bar Screen">
+    </div>
+    <div>
+        <h3>Internationalization Screen</h3>
+        <img src="assets/screenshots/ss12.png" width="300" height="600" alt="Internationalization Screen">
+    </div>
+</div>
