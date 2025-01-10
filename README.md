@@ -17,52 +17,54 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screenshots
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-    <div>
+## Screenshots
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Home Screen</h3>
         <img src="assets/screenshots/ss1.png" width="300" height="600" alt="Home Screen">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>UI Components Screen</h3>
         <img src="assets/screenshots/ss2.png" width="300" height="600" alt="UI Components Screen">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>UI Components Screen 2</h3>
         <img src="assets/screenshots/ss3.png" width="300" height="600" alt="UI Components Screen 2">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Code Viewer Modal</h3>
         <img src="assets/screenshots/ss4.png" width="300" height="600" alt="Code Viewer Modal">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Animations Screen</h3>
         <img src="assets/screenshots/ss5.png" width="300" height="600" alt="Animations Screen">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Boilerplate's Screen</h3>
         <img src="assets/screenshots/ss6.png" width="300" height="600" alt="Boilerplate's Screen">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>API Methods Screen</h3>
         <img src="assets/screenshots/ss7.png" width="300" height="600" alt="API Methods Screen">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Examples Screen</h3>
         <img src="assets/screenshots/ss8.png" width="300" height="600" alt="Examples Screen">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Sliver Screen</h3>
         <img src="assets/screenshots/ss9.png" width="300" height="600" alt="Sliver Screen">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Charts Screen</h3>
         <img src="assets/screenshots/ss10.png" width="300" height="600" alt="Charts Screen">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Custom Bottom Bar Screen</h3>
         <img src="assets/screenshots/ss11.png" width="300" height="600" alt="Custom Bottom Bar Screen">
     </div>
-    <div>
+    <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Internationalization Screen</h3>
         <img src="assets/screenshots/ss12.png" width="300" height="600" alt="Internationalization Screen">
     </div>
