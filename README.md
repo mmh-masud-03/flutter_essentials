@@ -50,7 +50,7 @@ samples, guidance on mobile development, and a full API reference.
     </div>
     <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Examples Screen</h3>
-        <img src="assets/screenshots/ss8.png" width="300" height="600" alt="Examples Screen">
+        <img src="assets/screenshots/ss13.png" width="300" height="600" alt="Examples Screen">
     </div>
     <div style="flex: 1 1 calc(50% - 20px); box-sizing: border-box;">
         <h3>Sliver Screen</h3>
