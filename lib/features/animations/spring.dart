@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/physics.dart';
 
 class FullscreenSpringDemo extends StatelessWidget {
-  const FullscreenSpringDemo({Key? key}) : super(key: key);
+  const FullscreenSpringDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class FullscreenSpringDemo extends StatelessWidget {
 }
 
 class DemoCard extends StatelessWidget {
-  const DemoCard({Key? key}) : super(key: key);
+  const DemoCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -98,7 +98,7 @@ class SpringAnimation extends StatefulWidget {
   final double displacement;
 
   const SpringAnimation({
-    Key? key,
+    super.key,
     required this.child,
     this.duration = const Duration(milliseconds: 1000),
     this.springConstant = 20,
@@ -108,7 +108,7 @@ class SpringAnimation extends StatefulWidget {
     this.onComplete,
     this.curve = Curves.easeOutQuart,
     this.displacement = 100,
-  }) : super(key: key);
+  });
 
   @override
   State<SpringAnimation> createState() => _SpringAnimationState();

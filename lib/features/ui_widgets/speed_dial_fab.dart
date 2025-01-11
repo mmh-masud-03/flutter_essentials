@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class SpeedDialFAB extends StatefulWidget {
   final List<SpeedDialItem> items;
 
-  const SpeedDialFAB({Key? key, required this.items}) : super(key: key);
+  const SpeedDialFAB({super.key, required this.items});
 
   @override
   State<SpeedDialFAB> createState() => _SpeedDialFABState();

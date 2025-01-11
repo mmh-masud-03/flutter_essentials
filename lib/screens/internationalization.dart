@@ -39,7 +39,7 @@ import 'package:flutter/material.dart';
 */
 
 class InternationalizationScreen extends StatelessWidget {
-  const InternationalizationScreen({Key? key}) : super(key: key);
+  const InternationalizationScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -405,12 +405,11 @@ class _LanguageButton extends StatelessWidget {
   final VoidCallback onPressed;
 
   const _LanguageButton({
-    Key? key,
     required this.language,
     required this.languageCode,
     required this.nativeText,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

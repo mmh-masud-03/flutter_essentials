@@ -27,7 +27,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   // Define route names as static constants for type safety and reusability
   static const String uiWidgetsRoute = '/ui-widgets';

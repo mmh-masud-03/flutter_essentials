@@ -12,7 +12,7 @@ class ParallaxScrollAnimation extends StatefulWidget {
   final ScrollPhysics? physics;
 
   const ParallaxScrollAnimation({
-    Key? key,
+    super.key,
     required this.items,
     this.itemExtent = 300,
     this.parallaxEffect = 0.5,
@@ -21,7 +21,7 @@ class ParallaxScrollAnimation extends StatefulWidget {
     this.overlayColor = Colors.black26,
     this.itemBuilder,
     this.physics,
-  }) : super(key: key);
+  });
 
   @override
   State<ParallaxScrollAnimation> createState() => _ParallaxScrollAnimationState();
@@ -102,7 +102,7 @@ class ParallaxItemWidget extends StatelessWidget {
   final Widget Function(BuildContext, int)? customBuilder;
 
   const ParallaxItemWidget({
-    Key? key,
+    super.key,
     required this.item,
     required this.scrollController,
     required this.itemExtent,
@@ -112,7 +112,7 @@ class ParallaxItemWidget extends StatelessWidget {
     required this.enableOverlay,
     required this.overlayColor,
     this.customBuilder,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

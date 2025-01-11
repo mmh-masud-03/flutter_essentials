@@ -9,11 +9,11 @@ class FlipCard extends StatefulWidget {
   final Duration duration;
 
   const FlipCard({
-    Key? key,
+    super.key,
     required this.front,
     required this.back,
     this.duration = const Duration(milliseconds: 800),
-  }) : super(key: key);
+  });
 
   @override
   State<FlipCard> createState() => _FlipCardState();

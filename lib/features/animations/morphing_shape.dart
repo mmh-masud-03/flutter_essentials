@@ -8,10 +8,10 @@ class MorphingShapeAnimation extends StatefulWidget {
   final Duration duration;
 
   const MorphingShapeAnimation({
-    Key? key,
+    super.key,
     this.color = Colors.blue,
     this.duration = const Duration(seconds: 2),
-  }) : super(key: key);
+  });
 
   @override
   State<MorphingShapeAnimation> createState() => _MorphingShapeAnimationState();

@@ -6,11 +6,11 @@ class CustomRatingBar extends StatefulWidget {
   final ValueChanged<double> onRatingChanged;
 
   const CustomRatingBar({
-    Key? key,
+    super.key,
     required this.maxStars,
     required this.initialRating,
     required this.onRatingChanged,
-  }) : super(key: key);
+  });
 
   @override
   _CustomRatingBarState createState() => _CustomRatingBarState();

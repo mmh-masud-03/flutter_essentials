@@ -8,12 +8,12 @@ class ShimmerLoadingAnimation extends StatefulWidget {
   final Color highlightColor;
 
   const ShimmerLoadingAnimation({
-    Key? key,
+    super.key,
     required this.width,
     required this.height,
     this.baseColor = const Color(0xFFE0E0E0),
     this.highlightColor = const Color(0xFFF5F5F5),
-  }) : super(key: key);
+  });
 
   @override
   State<ShimmerLoadingAnimation> createState() => _ShimmerLoadingAnimationState();

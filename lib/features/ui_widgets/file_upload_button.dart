@@ -7,11 +7,11 @@ class FileUploadButton extends StatefulWidget {
   final List<String>? allowedExtensions;
 
   const FileUploadButton({
-    Key? key,
+    super.key,
     this.label = 'Upload File',
     this.onFileSelected,
     this.allowedExtensions,
-  }) : super(key: key);
+  });
 
   @override
   State<FileUploadButton> createState() => _FileUploadButtonState();

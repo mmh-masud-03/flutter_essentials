@@ -9,10 +9,10 @@ class ParticleAnimation extends StatefulWidget {
   final int particleCount;
 
   const ParticleAnimation({
-    Key? key,
+    super.key,
     this.color = Colors.blue,
     this.particleCount = 30,
-  }) : super(key: key);
+  });
 
   @override
   State<ParticleAnimation> createState() => _ParticleAnimationState();

@@ -6,11 +6,11 @@ class CustomStepper extends StatelessWidget {
   final ValueChanged<int> onStepTapped;
 
   const CustomStepper({
-    Key? key,
+    super.key,
     required this.currentStep,
     required this.steps,
     required this.onStepTapped,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

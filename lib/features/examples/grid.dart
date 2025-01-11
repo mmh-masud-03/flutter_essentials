@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class GridScreen extends StatelessWidget {
-  const GridScreen({Key? key}) : super(key: key);
+  const GridScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -91,10 +91,10 @@ class GridScreen extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: const Text('Add to Cart'),
                       style: ElevatedButton.styleFrom(
                         minimumSize: const Size(double.infinity, 36),
                       ),
+                      child: const Text('Add to Cart'),
                     ),
                   ),
                 ],

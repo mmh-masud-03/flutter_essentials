@@ -21,7 +21,6 @@ import 'package:flutter_essentials/features/ui_widgets/switch_widget.dart';
 import 'package:flutter_essentials/features/ui_widgets/tag_input.dart';
 import 'package:flutter_essentials/features/ui_widgets/text_field_widget.dart';
 import 'package:flutter_essentials/features/ui_widgets/toast_message.dart';
-import 'package:flutter_essentials/widgets/expendable_section.dart';
 
 import '../widgets/source_code_dialog.dart';
 
@@ -292,12 +291,12 @@ class ExpandableSection extends StatelessWidget {
   final String codeUrl;
 
   const ExpandableSection({
-    Key? key,
+    super.key,
     required this.title,
     required this.widget,
     required this.description,
     required this.codeUrl,
-  }) : super(key: key);
+  });
 
   static Widget buildExpandableSection(
       BuildContext context, {

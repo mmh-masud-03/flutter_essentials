@@ -10,11 +10,11 @@ class LiquidWaveAnimation extends StatefulWidget {
   final Duration duration;
 
   const LiquidWaveAnimation({
-    Key? key,
+    super.key,
     this.color = Colors.blue,
     this.height = 200,
     this.duration = const Duration(seconds: 2),
-  }) : super(key: key);
+  });
 
   @override
   State<LiquidWaveAnimation> createState() => _LiquidWaveAnimationState();

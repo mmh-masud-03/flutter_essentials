@@ -8,13 +8,13 @@ class CustomCard extends StatelessWidget {
   final BorderRadiusGeometry? borderRadius;
 
   const CustomCard({
-    Key? key,
+    super.key,
     required this.child,
     this.elevation,
     this.backgroundColor,
     this.padding,
     this.borderRadius,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

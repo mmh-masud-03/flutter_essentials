@@ -7,12 +7,12 @@ class CustomSlider extends StatefulWidget {
   final ValueChanged<double> onChanged;
 
   const CustomSlider({
-    Key? key,
+    super.key,
     required this.min,
     required this.max,
     required this.initialValue,
     required this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   _CustomSliderState createState() => _CustomSliderState();

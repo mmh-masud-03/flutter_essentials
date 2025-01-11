@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart' as carousel_slider;
 
 class CarouselScreen extends StatelessWidget {
-  const CarouselScreen({Key? key}) : super(key: key);
+  const CarouselScreen({super.key});
 
   List<String> _getImageList() {
     return [

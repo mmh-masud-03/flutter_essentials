@@ -5,10 +5,10 @@ class CustomBadge extends StatelessWidget {
   final Color? color;
 
   const CustomBadge({
-    Key? key,
+    super.key,
     required this.text,
     this.color,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

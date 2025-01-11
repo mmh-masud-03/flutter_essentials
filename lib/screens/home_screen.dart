@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -118,12 +118,11 @@ class _FeatureCard extends StatelessWidget {
   final VoidCallback onTap;
 
   const _FeatureCard({
-    Key? key,
     required this.icon,
     required this.title,
     required this.description,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

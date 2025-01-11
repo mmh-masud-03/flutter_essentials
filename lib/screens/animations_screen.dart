@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_essentials/features/animations/animated_container.dart';
-import 'package:flutter_essentials/features/animations/confetti_animation.dart';
 import 'package:flutter_essentials/features/animations/fade_transition.dart';
 import 'package:flutter_essentials/features/animations/hero_animation.dart';
 import 'package:flutter_essentials/features/animations/liquid_wave.dart';
 import 'package:flutter_essentials/features/animations/morphing_shape.dart';
-import 'package:flutter_essentials/features/animations/parallax_scroll.dart';
 import 'package:flutter_essentials/features/animations/rotation.dart';
 import 'package:flutter_essentials/features/animations/scale_transition.dart';
 import 'package:flutter_essentials/features/animations/shimmer_loading.dart';
 import 'package:flutter_essentials/features/animations/slide_transition.dart';
-import 'package:flutter_essentials/features/animations/spring.dart';
 import 'package:flutter_essentials/features/animations/typing.dart';
 import 'package:flutter_essentials/widgets/expendable_section.dart';
 import '../features/animations/flip_card.dart';
@@ -188,7 +185,7 @@ class UIAnimationsScreen extends StatelessWidget {
       title: 'Flip Card',
       widget: FlipCard(front:
         Card(
-          child: Container(
+          child: SizedBox(
             height: 200,
             width: 200,
 
@@ -197,7 +194,7 @@ class UIAnimationsScreen extends StatelessWidget {
         ),
          back:
         Card(
-          child: Container(
+          child: SizedBox(
             height: 200,
             width: 200,
 

@@ -7,11 +7,11 @@ class CustomToast extends StatelessWidget {
   final Color? backgroundColor;
 
   const CustomToast({
-    Key? key,
+    super.key,
     required this.message,
     this.icon,
     this.backgroundColor,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

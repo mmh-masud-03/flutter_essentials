@@ -7,11 +7,11 @@ class PulseAnimation extends StatefulWidget {
   final double maxScale;
 
   const PulseAnimation({
-    Key? key,
+    super.key,
     required this.child,
     this.duration = const Duration(milliseconds: 1000),
     this.maxScale = 1.2,
-  }) : super(key: key);
+  });
 
   @override
   State<PulseAnimation> createState() => _PulseAnimationState();

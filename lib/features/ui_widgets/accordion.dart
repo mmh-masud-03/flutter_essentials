@@ -7,11 +7,11 @@ class CustomAccordion extends StatefulWidget {
   final bool initiallyExpanded;
 
   const CustomAccordion({
-    Key? key,
+    super.key,
     required this.title,
     required this.content,
     this.initiallyExpanded = false,
-  }) : super(key: key);
+  });
 
   @override
   State<CustomAccordion> createState() => _CustomAccordionState();

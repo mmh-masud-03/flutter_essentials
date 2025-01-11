@@ -7,7 +7,7 @@ class CustomColorPicker extends StatelessWidget {
   final List<Color> colors;
 
   const CustomColorPicker({
-    Key? key,
+    super.key,
     required this.selectedColor,
     required this.onColorChanged,
     this.colors = const [
@@ -22,7 +22,7 @@ class CustomColorPicker extends StatelessWidget {
       Colors.teal,
       Colors.green,
     ],
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

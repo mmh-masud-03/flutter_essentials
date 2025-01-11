@@ -7,11 +7,11 @@ class TypingTextAnimation extends StatefulWidget {
   final TextStyle? style;
 
   const TypingTextAnimation({
-    Key? key,
+    super.key,
     required this.text,
     this.duration = const Duration(milliseconds: 2000),
     this.style,
-  }) : super(key: key);
+  });
 
   @override
   State<TypingTextAnimation> createState() => _TypingTextAnimationState();

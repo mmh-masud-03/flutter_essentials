@@ -6,11 +6,11 @@ class CustomChip extends StatelessWidget {
   final VoidCallback? onPressed;
 
   const CustomChip({
-    Key? key,
+    super.key,
     required this.label,
     this.backgroundColor,
     this.onPressed,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

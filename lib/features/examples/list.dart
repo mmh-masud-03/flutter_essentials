@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListScreen extends StatefulWidget {
-  const ListScreen({Key? key}) : super(key: key);
+  const ListScreen({super.key});
 
   @override
   _ListScreenState createState() => _ListScreenState();

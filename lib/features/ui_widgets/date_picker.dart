@@ -5,10 +5,10 @@ class CustomDatePicker extends StatefulWidget {
   final ValueChanged<DateTime?> onDateSelected;
 
   const CustomDatePicker({
-    Key? key,
+    super.key,
     required this.label,
     required this.onDateSelected,
-  }) : super(key: key);
+  });
 
   @override
   _CustomDatePickerState createState() => _CustomDatePickerState();

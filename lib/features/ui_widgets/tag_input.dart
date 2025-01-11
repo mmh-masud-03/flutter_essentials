@@ -6,11 +6,11 @@ class TagInput extends StatefulWidget {
   final String? placeholder;
 
   const TagInput({
-    Key? key,
+    super.key,
     required this.tags,
     required this.onTagsChanged,
     this.placeholder,
-  }) : super(key: key);
+  });
 
   @override
   State<TagInput> createState() => _TagInputState();

@@ -6,11 +6,11 @@ class CustomRadioGroup extends StatefulWidget {
   final ValueChanged<String> onChanged;
 
   const CustomRadioGroup({
-    Key? key,
+    super.key,
     required this.groupLabel,
     required this.options,
     required this.onChanged,
-  }) : super(key: key);
+  });
 
   @override
   _CustomRadioGroupState createState() => _CustomRadioGroupState();
@@ -40,7 +40,7 @@ class _CustomRadioGroupState extends State<CustomRadioGroup> {
               widget.onChanged(value!);
             },
           );
-        }).toList(),
+        }),
       ],
     );
   }

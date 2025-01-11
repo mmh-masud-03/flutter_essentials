@@ -59,10 +59,10 @@ class _DragAndDropScreenState extends State<DragAndDropScreen> {
           Expanded(
             flex: 2,
             child: DragTarget<String>(
-              onWillAccept: (data) => !_basket.contains(data),
-              onAccept: (data) {
+              onWillAcceptWithDetails: (data) => !_basket.contains(data),
+              onAcceptWithDetails: (data) {
                 setState(() {
-                  _basket.add(data);
+                  _basket.add(data as String);
                   _isDropped = true;
                 });
                 ScaffoldMessenger.of(context).showSnackBar(

@@ -9,11 +9,11 @@ class ConfettiAnimation extends StatefulWidget {
   final int numberOfParticles;
 
   const ConfettiAnimation({
-    Key? key,
+    super.key,
     this.isPlaying = true,
     this.duration = const Duration(seconds: 2),
     this.numberOfParticles = 50,
-  }) : super(key: key);
+  });
 
   @override
   State<ConfettiAnimation> createState() => _ConfettiAnimationState();
